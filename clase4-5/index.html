@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <script src="./main.js" defer></script>
+    
+</head>
+<body>
+    <main>
+        <h1>Simulador de costos</h1>
+        <div class="container">
+            <h2>Seleccione por favor el tipo de tela que desea</h2>
+            <form action="">
+                <select name="telas" id="telas" onchange="Telas();">
+                    <option value="0" disabled selected>Seleccione un tipo</option>
+                    <option value="1">Lona</option>
+                    <option value="2">Rafia</option>
+                    <option value="3">PVC Cristal</option>
+                    <option value="4">Media Sombra</option>
+                </select>
+                <span id="x">
+
+                </span>
+                <br>
+                <label for="largo">Largo
+                    <input type="number" id="largo" placeholder="Indique largo de su lona">
+                </label>
+                <span id="R">
+
+                </span>
+                <label for="ancho">Ancho
+                    <input type="number" id="ancho" placeholder="Indique ancho de su lona">
+                </label>
+                <span id="Re">
+
+                </span>
+                <br>
+                <input type="button" value="Consultar">
+            </form>
+        </div>
+        <div class="resultado">
+            <h3>
+                El valor de su lona es de:
+            </h3>
+            <span>
+
+            </span>
+        </div>
+    </main>
+</body>
+</html>
